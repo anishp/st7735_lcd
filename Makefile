@@ -70,8 +70,8 @@ ${COMPILER}:
 #
 ${COMPILER}/main.axf: ${COMPILER}/main.o
 ${COMPILER}/main.axf: ${COMPILER}/startup_${COMPILER}.o
-${COMPILER}/main.axf: ${COMPILER}/PLL.o
 ${COMPILER}/main.axf: ${COMPILER}/ST7735.o
+${COMPILER}/main.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
 ${COMPILER}/main.axf: main.ld
 SCATTERgcc_main=main.ld
 ENTRY_main=ResetISR
