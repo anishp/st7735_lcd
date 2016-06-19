@@ -75,6 +75,7 @@ ${COMPILER}/main.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
 ${COMPILER}/main.axf: main.ld
 SCATTERgcc_main=main.ld
 ENTRY_main=ResetISR
+CFLAGSgcc=-DTARGET_IS_BLIZZARD_RA1
 
 #
 # Include the automatically generated dependency files.
